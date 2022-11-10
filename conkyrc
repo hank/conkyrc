@@ -63,6 +63,10 @@ conky.text = [[
 # Weather
 # Ambient
 ${texeci 60 python $HOME/.conky/ambient.py}
+# Assets
+${voffset -100}
+${execpi 600 bash $HOME/.conky/asset_prices.sh}
+${voffset 10}
 \
 # wttr
 #${texeci 360 curl wttr.in/Sandpoint_0pq.png?u | convert - -transparent black $HOME/.config/conky/out.png}
